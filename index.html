@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://localhost/thebooklog/User/userblog.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The BookLog</title>
+
+    <!-- bootstrap 5 CDN-->
+	<link href="./index_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- bootstrap 5 Js bundle CDN-->
+    <script src="./index_files/bootstrap.bundle.min.js.download" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./index_files/style.css">
+<style>
+    .bg {
+        
+        background-color:lightgrey;
+    }
+    .container{
+
+    }
+    </style>
+</head>
+<body>
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light ">
+		  <div class="container-fluid">
+		  <img src="./index_files/logo.png" width="300px" height="150px" style="margin-left:-150px">
+          <a class="navbar-brand" href="http://localhost/thebooklog/User/userblog.php">Blog</a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		     <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
+		        <!-- <li class="nav-item">
+		          <a class="nav-link active" 
+		             aria-current="page" 
+		             href="userblog.php">Blog</a>
+		        </li> -->
+                <li class="nav-item">
+		          <a class="nav-link " aria-current="page" href="http://localhost/thebooklog/User/Contactus.php">Contact Us</a>
+		        </li>
+                <li class="nav-item">
+		          <a class="nav-link " aria-current="page" href="http://localhost/thebooklog/User/aboutus.php"> About Us</a>
+		        </li>
+				
+                			<li class="nav-item dropdown position-absolute top end-0">
+		          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Login/Register </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+		            <li><a class="dropdown-item" href="http://localhost/thebooklog/User/userlogin.php">Login</a></li>
+                    <li><a class="dropdown-item" href="http://localhost/thebooklog/User/userreg.php">Register</a></li>
+            
+ 
+		      </ul> 
+		    </li></ul></div>
+		  </div>
+		</nav>
+		<form action="http://localhost/thebooklog/User/search.php" method="get" style="width: 100%; max-width: 30rem">
+
+       	<div class="input-group my-5">
+		  <input type="text" class="form-control" name="key" placeholder="Search Book..." aria-label="Search Book..." aria-describedby="basic-addon2">
+
+		  <button class="input-group-text
+		                 btn btn-primary" id="basic-addon2">
+		          <img src="./index_files/search.png" width="20">
+
+		  </button>
+		</div>
+       </form>
+		<div class="d-flex pt-3">
+						<div class="pdf-list d-flex flex-wrap" style="max-height:40rem;max-width:70rem;width:100%;">
+								<div class="card m-1 " style="max-height:40rem;max-width:70rem;">
+					<img src="./index_files/649189402bbc29.23286259.jpg" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">
+							To Kill A Mockingbird						</h5>
+						<p class="card-text">
+							<i><b>By:
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								Harper Lee							<br></b></i>
+							
+							<i><b>Category:
+								
+								
+								
+								
+								
+								Classics							<br></b></i>
+						</p>
+						<a type="button" href="http://localhost/thebooklog/User/bookdetail.php?id=21" class="btn btn-primary">
+					   View</a>
+					</div>
+				</div>
+								<div class="card m-1 " style="max-height:40rem;max-width:70rem;">
+					<img src="./index_files/649188a407c3d7.36817748.jpg" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">
+							This Is How You Loose A Time War						</h5>
+						<p class="card-text">
+							<i><b>By:
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								Max GladStone Amal El Mohtar							<br></b></i>
+							
+							<i><b>Category:
+								
+								
+								
+								
+								
+								
+								Science Fiction							<br></b></i>
+						</p>
+						<a type="button" href="http://localhost/thebooklog/User/bookdetail.php?id=20" class="btn btn-primary">
+					   View</a>
+					</div>
+				</div>
+								<div class="card m-1 " style="max-height:40rem;max-width:70rem;">
+					<img src="./index_files/6491880ecbc374.68075128.jpg" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">
+							The Shakespeare Secret						</h5>
+						<p class="card-text">
+							<i><b>By:
+								
+								
+								
+								
+								
+								
+								
+								
+								J L Carrell							<br></b></i>
+							
+							<i><b>Category:
+								
+								
+								
+								
+								
+								
+								
+								
+								Mystery							<br></b></i>
+						</p>
+						<a type="button" href="http://localhost/thebooklog/User/bookdetail.php?id=19" class="btn btn-primary">
+					   View</a>
+					</div>
+				</div>
+								<div class="card m-1 " style="max-height:40rem;max-width:70rem;">
+					<img src="./index_files/6491874ae02d31.12787283.jpg" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">
+							The Light We carry						</h5>
+						<p class="card-text">
+							<i><b>By:
+								
+								
+								
+								Michelle Obama							<br></b></i>
+							
+							<i><b>Category:
+								
+								
+								
+								
+								
+								
+								
+								Self Help							<br></b></i>
+						</p>
+						<a type="button" href="http://localhost/thebooklog/User/bookdetail.php?id=18" class="btn btn-primary">
+					   View</a>
+					</div>
+				</div>
+								<div class="card m-1 " style="max-height:40rem;max-width:70rem;">
+					<img src="./index_files/64918621aa05d0.51256512.jpg" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">
+							The Art of War						</h5>
+						<p class="card-text">
+							<i><b>By:
+								
+								
+								
+								
+								
+								
+								
+								Sun Tzu							<br></b></i>
+							
+							<i><b>Category:
+								
+								
+								
+								
+								Philosophy							<br></b></i>
+						</p>
+						<a type="button" href="http://localhost/thebooklog/User/bookdetail.php?id=17" class="btn btn-primary">
+					   View</a>
+					</div>
+				</div>
+								<div class="card m-1 " style="max-height:40rem;max-width:70rem;">
+					<img src="./index_files/649184fb79ca23.09424726.jpg" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">
+							Antonement						</h5>
+						<p class="card-text">
+							<i><b>By:
+								
+								
+								
+								
+								
+								
+								Ian McEwan							<br></b></i>
+							
+							<i><b>Category:
+								
+								
+								
+								History							<br></b></i>
+						</p>
+						<a type="button" href="http://localhost/thebooklog/User/bookdetail.php?id=16" class="btn btn-primary">
+					   View</a>
+					</div>
+				</div>
+								<div class="card m-1 " style="max-height:40rem;max-width:70rem;">
+					<img src="./index_files/6491844c9cdc17.10633678.jpg" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">
+							Babel						</h5>
+						<p class="card-text">
+							<i><b>By:
+								
+								
+								
+								
+								
+								R F Kaung							<br></b></i>
+							
+							<i><b>Category:
+								
+								
+								
+								History							<br></b></i>
+						</p>
+						<a type="button" href="http://localhost/thebooklog/User/bookdetail.php?id=15" class="btn btn-primary">
+					   View</a>
+					</div>
+				</div>
+								<div class="card m-1 " style="max-height:40rem;max-width:70rem;">
+					<img src="./index_files/64645e0d01ecd5.24762242.jpeg" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">
+							Becoming						</h5>
+						<p class="card-text">
+							<i><b>By:
+								
+								
+								
+								Michelle Obama							<br></b></i>
+							
+							<i><b>Category:
+								
+								Autobiography							<br></b></i>
+						</p>
+						<a type="button" href="http://localhost/thebooklog/User/bookdetail.php?id=14" class="btn btn-primary">
+					   View</a>
+					</div>
+				</div>
+								<div class="card m-1 " style="max-height:40rem;max-width:70rem;">
+					<img src="./index_files/6464072fdaa8d5.26689610.jpg" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">
+							The Time Machine						</h5>
+						<p class="card-text">
+							<i><b>By:
+								
+								
+								HG Wells							<br></b></i>
+							
+							<i><b>Category:
+								
+								
+								
+								
+								
+								
+								Science Fiction							<br></b></i>
+						</p>
+						<a type="button" href="http://localhost/thebooklog/User/bookdetail.php?id=13" class="btn btn-primary">
+					   View</a>
+					</div>
+				</div>
+								<div class="card m-1 " style="max-height:40rem;max-width:70rem;">
+					<img src="./index_files/644956e9e680f9.12430184.jpg" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">
+							Twisted Games						</h5>
+						<p class="card-text">
+							<i><b>By:
+								
+								Ana Huang							<br></b></i>
+							
+							<i><b>Category:
+								
+								
+								Contemporary							<br></b></i>
+						</p>
+						<a type="button" href="http://localhost/thebooklog/User/bookdetail.php?id=12" class="btn btn-primary">
+					   View</a>
+					</div>
+				</div>
+								<div class="card m-1 " style="max-height:40rem;max-width:70rem;">
+					<img src="./index_files/64918de3e53e64.18327718.jpg" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">
+							Regretting You						</h5>
+						<p class="card-text">
+							<i><b>By:
+								Collen Hoover							<br></b></i>
+							
+							<i><b>Category:
+								Romance							<br></b></i>
+						</p>
+						<a type="button" href="http://localhost/thebooklog/User/bookdetail.php?id=11" class="btn btn-primary">
+					   View</a>
+					</div>
+				</div>
+								<div class="card m-1 " style="max-height:40rem;max-width:70rem;">
+					<img src="./index_files/6491868a990da9.94920530.jpeg" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">
+							November9						</h5>
+						<p class="card-text">
+							<i><b>By:
+								Collen Hoover							<br></b></i>
+							
+							<i><b>Category:
+								Romance							<br></b></i>
+						</p>
+						<a type="button" href="http://localhost/thebooklog/User/bookdetail.php?id=10" class="btn btn-primary">
+					   View</a>
+					</div>
+				</div>
+								<div class="card m-1 " style="max-height:40rem;max-width:70rem;">
+					<img src="./index_files/6447a50d3cc0a9.73530299.jpg" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">
+							Confess						</h5>
+						<p class="card-text">
+							<i><b>By:
+								Collen Hoover							<br></b></i>
+							
+							<i><b>Category:
+								Romance							<br></b></i>
+						</p>
+						<a type="button" href="http://localhost/thebooklog/User/bookdetail.php?id=9" class="btn btn-primary">
+					   View</a>
+					</div>
+				</div>
+								<div class="card m-1 " style="max-height:40rem;max-width:70rem;">
+					<img src="./index_files/644769c103d926.36107986.jpeg" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">
+							Ugly Love						</h5>
+						<p class="card-text">
+							<i><b>By:
+								Collen Hoover							<br></b></i>
+							
+							<i><b>Category:
+								Romance							<br></b></i>
+						</p>
+						<a type="button" href="http://localhost/thebooklog/User/bookdetail.php?id=8" class="btn btn-primary">
+					   View</a>
+					</div>
+				</div>
+								<div class="card m-1 " style="max-height:40rem;max-width:70rem;">
+					<img src="./index_files/644769d9709895.05094585.jpg" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">
+							It ends with us						</h5>
+						<p class="card-text">
+							<i><b>By:
+								Collen Hoover							<br></b></i>
+							
+							<i><b>Category:
+								Romance							<br></b></i>
+						</p>
+						<a type="button" href="http://localhost/thebooklog/User/bookdetail.php?id=7" class="btn btn-primary">
+					   View</a>
+					</div>
+				</div>
+							</div>
+		
+		<div class="category">
+			<!-- List of categories -->
+			<div class="list-group">
+								<a href="http://localhost/thebooklog/User/userblog.php#" class="list-group-item list-group-item-action active">Category</a>
+				   				  
+				   <a href="http://localhost/thebooklog/User/category.php?id=1" class="list-group-item list-group-item-action">
+				      Romance</a>
+								  
+				   <a href="http://localhost/thebooklog/User/category.php?id=8" class="list-group-item list-group-item-action">
+				      Autobiography</a>
+								  
+				   <a href="http://localhost/thebooklog/User/category.php?id=10" class="list-group-item list-group-item-action">
+				      Contemporary</a>
+								  
+				   <a href="http://localhost/thebooklog/User/category.php?id=11" class="list-group-item list-group-item-action">
+				      History</a>
+								  
+				   <a href="http://localhost/thebooklog/User/category.php?id=12" class="list-group-item list-group-item-action">
+				      Philosophy</a>
+								  
+				   <a href="http://localhost/thebooklog/User/category.php?id=15" class="list-group-item list-group-item-action">
+				      Classics</a>
+								  
+				   <a href="http://localhost/thebooklog/User/category.php?id=16" class="list-group-item list-group-item-action">
+				      Science Fiction</a>
+								  
+				   <a href="http://localhost/thebooklog/User/category.php?id=17" class="list-group-item list-group-item-action">
+				      Self Help</a>
+								  
+				   <a href="http://localhost/thebooklog/User/category.php?id=18" class="list-group-item list-group-item-action">
+				      Mystery</a>
+							</div>
+
+			<!-- List of authors -->
+			<div class="list-group mt-5">
+								<a href="http://localhost/thebooklog/User/userblog.php#" class="list-group-item list-group-item-action active">Author</a>
+				   				  
+				   <a href="http://localhost/thebooklog/User/author.php?id=1" class="list-group-item list-group-item-action">
+				      Collen Hoover</a>
+								  
+				   <a href="http://localhost/thebooklog/User/author.php?id=10" class="list-group-item list-group-item-action">
+				      Ana Huang</a>
+								  
+				   <a href="http://localhost/thebooklog/User/author.php?id=11" class="list-group-item list-group-item-action">
+				      HG Wells</a>
+								  
+				   <a href="http://localhost/thebooklog/User/author.php?id=12" class="list-group-item list-group-item-action">
+				      Michelle Obama</a>
+								  
+				   <a href="http://localhost/thebooklog/User/author.php?id=13" class="list-group-item list-group-item-action">
+				      Anne Frank</a>
+								  
+				   <a href="http://localhost/thebooklog/User/author.php?id=14" class="list-group-item list-group-item-action">
+				      R F Kaung</a>
+								  
+				   <a href="http://localhost/thebooklog/User/author.php?id=15" class="list-group-item list-group-item-action">
+				      Ian McEwan</a>
+								  
+				   <a href="http://localhost/thebooklog/User/author.php?id=16" class="list-group-item list-group-item-action">
+				      Sun Tzu</a>
+								  
+				   <a href="http://localhost/thebooklog/User/author.php?id=17" class="list-group-item list-group-item-action">
+				      J L Carrell</a>
+								  
+				   <a href="http://localhost/thebooklog/User/author.php?id=18" class="list-group-item list-group-item-action">
+				      Max GladStone Amal El Mohtar</a>
+								  
+				   <a href="http://localhost/thebooklog/User/author.php?id=19" class="list-group-item list-group-item-action">
+				      Harper Lee</a>
+								  
+				   <a href="http://localhost/thebooklog/User/author.php?id=20" class="list-group-item list-group-item-action">
+				      Ashlesha</a>
+							</div>
+		</div>
+		</div>
+	</div>
+
+
+
+  </body></html>
