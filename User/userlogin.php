@@ -64,6 +64,6 @@ if (!isset($_SESSION['u_id']) &&
 </html>
 
 <?php }else{
-  header("Location : userblog.php");
+  header("Location: userblog.php");
   exit;
 } ?>

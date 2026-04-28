@@ -2,18 +2,18 @@
 session_start();
 
 # Database Connection File
-include "db_conn.php";
+include "../db_conn.php";
 
 # Book helper function
-include "php/func-book.php";
+include "../php/func-book.php";
 $books = get_all_books($conn);
 
 # author helper function
-include "php/func-author.php";
+include "../php/func-author.php";
 $authors = get_all_author($conn);
 
 # Category helper function
-include "php/func-category.php";
+include "../php/func-category.php";
 $categories = get_all_categories($conn);
 
  ?>
@@ -30,14 +30,14 @@ $categories = get_all_categories($conn);
     <!-- bootstrap 5 Js bundle CDN-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
 </head>
 <body>
 	<div class="container">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		  <div class="container-fluid">
-		  <img src="logo.png" width="300px" height="150px"style="margin-left:-150px">
+		  <img src="../logo.png" width="300px" height="150px"style="margin-left:-150px">
 		    <a class="navbar-brand" href="admin.php">Admin</a>
 		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		      <span class="navbar-toggler-icon"></span>
@@ -55,7 +55,7 @@ $categories = get_all_categories($conn);
 		    </div>
 		  </div>
 		</nav>
-		<form action="search.php"
+		<form action="../search.php"
              method="get" 
              style="width: 100%; max-width: 30rem">
 
@@ -70,7 +70,7 @@ $categories = get_all_categories($conn);
 		  <button class="input-group-text
 		                 btn btn-primary" 
 		          id="basic-addon2">
-		          <img src="img/search.png"
+		          <img src="../img/search.png"
 		               width="20">
 
 		  </button>
@@ -88,7 +88,7 @@ $categories = get_all_categories($conn);
 			<div class="pdf-list d-flex flex-wrap">
 				<?php foreach ($books as $book) { ?>
 				<div class="card m-1">
-					<img src="uploads/cover/<?=$book['cover']?>"
+					<img src="../uploads/cover/<?=$book['cover']?>"
 					     class="card-img-top" >
 					<div class="card-body">
 						<h5 class="card-title">
@@ -134,7 +134,7 @@ $categories = get_all_categories($conn);
 				   class="list-group-item list-group-item-action active">Category</a>
 				   <?php foreach ($categories as $category ) {?>
 				  
-				   <a href="category.php?id=<?=$category['id']?>"
+				   <a href="../category.php?id=<?=$category['id']?>"
 				      class="list-group-item list-group-item-action">
 				      <?=$category['name']?></a>
 				<?php } } ?>
@@ -149,7 +149,7 @@ $categories = get_all_categories($conn);
 				   class="list-group-item list-group-item-action active">Author</a>
 				   <?php foreach ($authors as $author ) {?>
 				  
-				   <a href="author.php?id=<?=$author['id']?>"
+				   <a href="../author.php?id=<?=$author['id']?>"
 				      class="list-group-item list-group-item-action">
 				      <?=$author['name']?></a>
 				<?php } } ?>
